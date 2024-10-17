@@ -1,0 +1,86 @@
+/* Body background set to black */
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Card style */
+.card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Default shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card header */
+.card-header {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Hover effect with stronger shadow and scale animation */
+.card:hover {
+    transform: translateY(-10px);
+    /* Move up when hovering */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    /* Larger shadow on hover */
+}
+
+/* Search box style */
+input[type="text"] {
+    border: 2px solid #cccccc;
+    /* Default border color */
+    transition: border-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    /* Rounded corners for a modern look */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Change color of the search box on hover */
+input[type="text"]:hover {
+    border-color: #32cb5b;
+    /* Green border on hover */
+}
+
+/* Change color of the search box on focus */
+input[type="text"]:focus {
+    border-color: #2ecc49;
+    /* Darker green border on focus */
+    outline: none;
+    box-shadow: 0 0 10px rgba(46, 204, 73, 0.5);
+    /* Add green shadow when focused */
+}
+
+/* Button style */
+button {
+    background-color: #28a745;
+    /* Default button color (green) */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    /* Make button full width */
+}
+
+/* Change color of the button on hover */
+button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+/* Change color of the button on focus */
+button:focus {
+    background-color: #1e7e34;
+    /* Even darker green on focus */
+    outline: none;
+}
